@@ -4,7 +4,9 @@ Analysis of in-demand technical skills using job market data
 
 ## Project Overview
 
-This project analyzes job market data to identify in-demand technical skills and understand current hiring trends.
+This project analyzes job market data to understand job demand, technical skill requirements, salary trends, experience requirements, and hiring patterns.
+
+The project follows an end-to-end workflow from data collection and cleaning to SQL analysis, Python-based exploratory analysis, and Power BI dashboard development.
 
 ## Technologies Used
 
@@ -19,39 +21,75 @@ This project analyzes job market data to identify in-demand technical skills and
 
 ## Project Workflow
 
-1. Data Collection using Apify
-2. Data Cleaning and Preprocessing using Python
-3. SQL-based Data Analysis using MySQL
-4. Exploratory Data Analysis using Python and Matplotlib
-5. Power BI Dashboard Development
-6. Skill Demand and Job Market Insights
+![Project Workflow](projectflow.jpeg)
+
+**Workflow:** Data Collection → Data Cleaning → Data Processing → SQL Analysis → EDA → Power BI Dashboard → Insights
 
 ## Dataset
 
-The dataset contains job listing information including:
+The dataset contains job listing information such as:
 
 * Job Title
 * Company
 * Location
 * Experience
-* Salary
+* Minimum & Maximum Salary
 * Job Role
 * Technical Skills
 
-## Analysis
+The project uses both raw and cleaned datasets for analysis.
 
-The project focuses on analyzing:
+## Data Analysis
 
-* Most in-demand technical skills
-* Job roles and demand
-* Experience requirements
-* Salary information
-* Location-wise job opportunities
+### Python
+
+Python and Pandas were used for:
+
+* Data loading
+* Data cleaning
+* Handling missing values
+* Removing duplicate records
+* Selecting relevant columns
+* Preparing the final dataset
+* Exploratory data analysis
+
+![Python Analysis](python_analysis.png)
+
+### SQL
+
+SQL was used to analyze the job dataset and extract insights related to:
+
+* Job demand by location
+* Job demand by experience
+* Job roles
 * Hiring companies
+* Salary and experience
 
-## Dashboard
+![SQL Analysis](sql_analysis.png)
 
-The interactive Power BI dashboard provides visual insights into job demand, technical skills, salary, experience, and locations.
+## Power BI Dashboard
+
+An interactive Power BI dashboard was created to visualize:
+
+* Total number of jobs
+* Jobs by location
+* Jobs by role
+* Salary vs. experience
+* Job demand by experience
+* Top hiring companies
+
+![Power BI Dashboard](dashboard_final.png)
+
+## Key Insights
+
+The analysis focuses on identifying:
+
+* In-demand job roles
+* Technical skill requirements
+* Locations with higher job demand
+* Experience requirements
+* Salary trends
+* Top hiring companies
 
 ## Project Structure
 
@@ -59,12 +97,20 @@ The interactive Power BI dashboard provides visual insights into job demand, tec
 Tech-Skill-Demand-and-Analysis/
 │
 ├── README.md
-├── images/
-├── data/
+├── python/
+│   └── analysis.ipynb
 ├── sql/
-└── python/
+│   └── analysis.sql
+├── dashboard_final.png
+├── projectflow.jpeg
+├── python_analysis.png
+├── sql_analysis.png
+├── raw_dataset.csv
+└── final_clean_dataset.csv
 ```
 
 ## Author
 
-Aditya Vinayak Mahale
+**Aditya Vinayak Mahale**
+
+B.Tech – Electronics & Telecommunication Engineering
